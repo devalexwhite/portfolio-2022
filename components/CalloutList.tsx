@@ -24,7 +24,7 @@ export const CalloutList = ({ callouts = [] }: CalloutListProps) => {
             />
           </div>
           <div className="col-span-3 flex flex-col text-sm justify-center text-content font-primary">
-            <span className=" font-medium">{text}</span>
+            <span className="font-medium">{text}</span>
             <span className="font-bold">{subtext}</span>
           </div>
         </li>

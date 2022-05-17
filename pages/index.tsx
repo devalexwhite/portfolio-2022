@@ -1,6 +1,7 @@
 import {
   faBriefcase,
   faDownload,
+  faEnvelope,
   faMapPin,
   faMicrophone,
 } from "@fortawesome/free-solid-svg-icons";
@@ -54,19 +55,24 @@ const Home: NextPage = () => {
 
   const links: Array<Link> = [
     {
+      href: "mailto:alex.white@hey.com",
+      text: "Email",
+      icon: faEnvelope,
+    },
+    {
       href: "/files/alex_white_resume.pdf",
       text: "Resume",
       icon: faDownload,
     },
     {
-      href: "https://www.linkedin.com/in/devalexwhite/",
-      text: "LinkedIn",
-      icon: faLinkedin,
-    },
-    {
       href: "https://github.com/devalexwhite/",
       text: "Github",
       icon: faGithub,
+    },
+    {
+      href: "https://www.linkedin.com/in/devalexwhite/",
+      text: "LinkedIn",
+      icon: faLinkedin,
     },
   ];
 

@@ -13,9 +13,9 @@ interface LinkListProps {
 
 export const LinkList = ({ links = [] }: LinkListProps) => {
   return (
-    <ul className="flex flex-col lg:flex-row ">
+    <ul className="flex flex-col lg:flex-row lg:flex-wrap ">
       {links.map(({ href, text, icon }, index) => (
-        <li key={index} className="mb-4 last:mb-0 lg:mb-0 lg:mr-8 ">
+        <li key={index} className="mb-4 last:mb-0 lg:mb-0 lg:mr-8 lg:mb-4 ">
           <a
             href={href}
             className="flex flex-row gradient-background rounded-full px-8 py-4 items-center hover:shadow-lg hover:-translate-y-1 transition-all duration-200"

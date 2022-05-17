@@ -23,7 +23,7 @@ export const CalloutList = ({ callouts = [] }: CalloutListProps) => {
               className="gradient-svg"
             />
           </div>
-          <div className="col-span-3 flex flex-col text-sm justify-center text-content font-primary">
+          <div className="col-span-3 flex flex-col text-sm justify-center text-content font-primary whitespace-nowrap">
             <span className="font-medium">{text}</span>
             <span className="font-bold">{subtext}</span>
           </div>

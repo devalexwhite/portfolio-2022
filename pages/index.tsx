@@ -75,9 +75,7 @@ const Home: NextPage = () => {
       className={`${styles.patternBackground} flex flex-col md:min-h-screen`}
     >
       <div className="w-full h-5 gradient-background mb-8"></div>
-      <div
-        className={`bg-cover flex flex-col items-center justify-center flex-1`}
-      >
+      <div className="bg-cover flex flex-col items-center justify-center flex-1">
         <Head>
           <title>Alex White - Full Stack Engineer in Irvine, CA</title>
           <meta
@@ -142,7 +140,7 @@ const Home: NextPage = () => {
                 Alex White
               </span>
 
-              <h1 className="font-primary font-black text-2xl md:text-5xl text-black max-w-xl mb-6 md:mb-10">
+              <h1 className="font-primary font-black text-2xl md:text-5xl md:leading-tight text-black max-w-xl mb-6 md:mb-10">
                 Full stack engineer in Irvine, California.
               </h1>
 

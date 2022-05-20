@@ -11,6 +11,7 @@ import Head from "next/head";
 import { Callout, CalloutList } from "../components/CalloutList";
 import { Link, LinkList } from "../components/LinkList";
 import styles from "../styles/Home.module.css";
+import Image from "next/image";
 
 const Home: NextPage = () => {
   const structuredData = {
@@ -131,8 +132,9 @@ const Home: NextPage = () => {
             <div className="relative flex-shrink-0 mb-16 md:mb-8 md:mb-0 md:mr-16 w-56">
               <div className="absolute top-0 left-0 -ml-4 mt-4 z-0 gradient-background rounded-full h-56 w-56"></div>
 
-              <img
-                src="/images/headshot.webp"
+              <Image
+                src={require("../public/images/headshot.webp")}
+                sizes="(max-width: 224px) 100vw, 224px"
                 alt="Portrait shot of Alex White"
                 className="rounded-full z-10 relative h-56 w-56 block"
               />
